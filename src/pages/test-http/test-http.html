@@ -1,0 +1,62 @@
+<!--
+  Generated template for the TestHttpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>HTTP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<!--<ion-item>
+		<h4>Apps Name</h4>
+		<h4 item-end>{{apps.name}}</h4>
+	</ion-item>
+	<ion-item>
+		<h4>Version</h4>
+		<h4 item-end>{{apps.version}}</h4>
+	</ion-item>
+	<ion-item>
+		<h4>Description</h4>
+		<h4 item-end>{{apps.description}}</h4>
+	</ion-item>
+
+	<ion-item>
+		<ion-input [(ngModel)]="toServer.count" type="number" placeholder="Enter count number"></ion-input>
+	</ion-item>
+	<div padding>
+		<button ion-button block (click)="sendData()"> Send To Server </button>
+		<ion-spinner *ngIf="isLoading"></ion-spinner>
+	</div>
+	<ion-item *ngFor="let item of dataResponses">
+		{{item}}
+	</ion-item>
+	-->
+
+	<ion-item>
+		<ion-label color="primary" floating>NIM</ion-label>
+		<ion-input [(ngModel)]="mahasiswa.nim" type="text"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label color="primary" floating>Nama</ion-label>
+		<ion-input [(ngModel)]="mahasiswa.nama" type="text"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label color="primary" floating>Jurusan</ion-label>
+		<ion-input [(ngModel)]="mahasiswa.jurusan" type="text"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label color="primary" floating>Kelas</ion-label>
+		<ion-input [(ngModel)]="mahasiswa.kelas" type="text"></ion-input>
+	</ion-item>
+	<div padding>
+		<button ion-button block (click)="saveMahasiswa()"> Simpan </button>
+		<ion-spinner *ngIf="isLoading"></ion-spinner>
+	</div>
+</ion-content>
